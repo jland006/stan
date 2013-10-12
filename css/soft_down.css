@@ -1,0 +1,35 @@
+#wrapper #softbox {
+	background-image: url(../images/shadowed_biography_box.png);
+	height: 381px;
+	width: 830px;
+	margin-left: 4px;
+	padding-left: 40px;
+	padding-top: 30px;
+	margin-top: 5px;
+}
+#wrapper #softbox #email {
+	width: 300px;
+	background-position: right;
+}
+#wrapper #softbox #msg {
+	height: 15px;
+	color: #FF0033;
+}
+
+#wrapper #softbox ul {
+	list-style-type: disc;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+#wrapper #softbox ul li {
+	width: 600px;
+}
+
+
+
+
+
+.more {
+	color: #09214E;
+	text-shadow: 0px 1px #AAA;
+}

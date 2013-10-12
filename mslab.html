@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Dr. Sheldon Tan</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/mslab.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.vticker-min.js"></script>
+<script>
+$(function() {
+	$('#news_feed').vTicker({ 
+		speed: 500,
+		pause: 7000,
+		animation: 'fade',
+		mousePause: true,
+		showItems: 1
+	});
+
+
+});
+</script>
+</head>
+
+<body>
+	<div id="header">
+    	<div id="heading">
+            <span id="name" class="white">Dr. Sheldon Tan</span>
+        	<span id="subject" class="white">Professor of Electrical Engineering</span>
+        </div>
+    </div>
+    
+	<div id="wrapper">
+		<div id="navbar">
+        	<div id="nav_wrap">
+                <a href="index.html" class="left">HOME</a>
+                <div class="bar left"></div>
+                <a class="left">MSLAB</a>
+                <div class="bar left"></div>
+                <a href="research.html" class="left">PROJECTS & RESEARCH</a>
+                <div class="bar left"></div>
+                <a href="" class="left">PHOTO ALBUMS</a>
+                <div class="bar left"></div>
+                <a href="members.html" class="left">MEMEBERS</a>
+                <div class="bar left"></div>
+                <a href="" class="left">CONTACT</a>
+			</div>
+        </div>
+        <div id="mslabbox">
+        	<br>
+        	<p style="font-size:20px;" class="brick">Mixed-Signal Nanometer VLSI Research Lab (MSLAB)</p>
+            <br><br>
+        	<div id="mslab" class="left"></div>
+            <div id="mslab_text" class="left">
+            	<p>MSLAB at UCR works on cutting-edge mixed-signal/analog/RF circuit design methodology and develops design tools for current and future nanometer System-On-a-Chip VLSI. We address SoC design challenges andÂ  enable a quantum leap to a new generation of mixed-signal SoC systems.</p>
+                <br>
+                <p>Our research is sponsored by the federal government agencies, electronic design automation industry, State of California and University of California.</p>
+                <br>
+            </div>
+            <div id="contact_box" class="left">
+            	<p class="brick">MSLAB Director</p>
+                <p style="margin-bottom:9px;">Prof. Sheldon Tan</p>
+            	<p class="brick">EMAIL</p>
+                <p style="margin-bottom:9px;">stan@ee.ucr.edu</p>
+                <p class="brick">PHONE</p>
+                <p style="margin-bottom:9px;">(951) 827-6161</p>
+                <p class="brick">OFFICE</p>
+                <p style="margin-bottom:9px;">Eng-II, Rm 361</p>
+                <br><br>
+            </div>
+        </div>
+        <div id="news_feed" class="clear">
+            <ul>
+                <li>
+                	<div>
+                        <p class="brick" style="text-shadow: 0px 1px #AAA;">RESEARCH AREAS</p>
+                        <br>
+                        <p>Modeling, simulation and optimization of mixed-signal/RF/analog/interconnect circuits.</p>
+						<p>High performance power/ground distribution and clock network optimization and analysis.</p>
+						<p>Architecture thermal analysis and modeling for dynamic thermal management.</p>
+						<p>Embedded system design based on FPGA platforms.</p>
+                        <a href="" class="more">MORE</a>
+
+                    </div>
+                </li>
+                <li>
+                	<div>
+                        <p class="brick" style="text-shadow: 0px 1px #AAA;">MSLAB FACILITIES AND COMPUTING RESOURCES</p>
+                        <br>
+                        <p>MSLAB has 1000 sf lab space located in the Eng-II 361. The Lab has about 12 desk top PCs with latest windows, Matlab and two Apple iMAC with 27 inch screen and 4GB memory.</p>
+
+						<p>The Lab also consists of three Linux servers: Dell PowerEdge 1900 server, mammoth (Quad Core Intel Xeon E5310, 2x4MB Cache, 1.60GHz, 1066MHz FSB, 16 GM memory), AMAX Tesla server, tesla, (Quad-Core Intel E5504, 24GB memory. Dell Server, tek,(Intel Duo Core CPU, 8GB memory). A new server (Newton) with 2 Xeon E5-2670 (8 cores)Â  CPUs and 64GB DDR3 memory and 2.8TB disk space.</p>
+
+						<p>One Quadro FX 5800 GPU card, one Tesla C1060 (inside tesla server), one Tesla S1070 1U CPU card (four C10 GPUs). All the GPU cards are donated by Nvidia Corporation.</p>
+
+						<p>MSLAB also has licensed Cadence Design Tool Suites (Spectra, Spectra RF, UltraSim) and Synopsys design tool suites (Design Compiler and Physical Computers, HSPICE).</p>
+
+
+						<p>Our research area is highly multidisciplinary, dynamic and fast changing and requires electrical, mathematic, and computes science knowledge and strong programming skills.</p>
+
+						<p>We are looking for highly motivated and energetic students, who love to tackle on challenges and enjoy exciting rides along the course of scientific and engineering discovery.</p>
+                        <a href="" class="more">MORE</a>
+                    <div>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <ul class="clear">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Teaching</a></li>
+            <li><a href="">Software Download</a></li>
+            <li><a href="">Useful Links</a></li>
+            <li><a href="">Publication</a></li>
+            <li><a href="">News</a></li>
+        </ul>
+	</div>
+</body>
+</html>

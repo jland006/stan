@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Dr. Sheldon Tan</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/soft_down.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script>
+$(function() {
+	$('#submit').click(function(){
+		$('#msg').html('');
+		var email = $('#email').val();
+		var valid_email = validate_email_syntax(email);
+		if (valid_email) {
+			$('#email').val('');
+			$.post('php/email_req.php', {email:email}, function(output){
+				$('#msg').html("E-mail has been sent to you with the download links");
+			});
+		}
+		else {
+			$('#msg').html("* Please enter a valid e-mail");
+		}
+	});
+});
+
+function validate_email_syntax(email) {
+	var reg_exp = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	return reg_exp.test(email);
+}
+</script>
+</head>
+
+<body>
+	<div id="header">
+    	<div id="heading">
+            <span id="name" class="white">Dr. Sheldon Tan</span>
+        	<span id="subject" class="white">Professor of Electrical Engineering</span>
+        </div>
+    </div>
+    
+	<div id="wrapper">
+		<div id="navbar">
+        	<div id="nav_wrap">
+                <a href="index.html" class="left">HOME</a>
+                <div class="bar left"></div>
+                <a class="left">MSLAB</a>
+                <div class="bar left"></div>
+                <a href="research.html" class="left">PROJECTS & RESEARCH</a>
+                <div class="bar left"></div>
+                <a href="" class="left">PHOTO ALBUMS</a>
+                <div class="bar left"></div>
+                <a href="members.html" class="left">MEMEBERS</a>
+                <div class="bar left"></div>
+                <a href="" class="left">CONTACT</a>
+			</div>
+        </div>
+        <div id="softbox">
+        	<br>
+        	<p style="font-size:20px;" class="brick">Software Packages from MSLAB</p>
+            <br><br>
+        	<p>MSLAB,  UC Riverside and the Regents of University of California keep all the copyrights of the following programs.</p>
+			<p>Please contact Sheldon Tan (stan@ee.ucr.edu) for any comment and bug report.</p>
+			<br>
+			<p>To download the software below, please provide your e-mail. Links to download the software will be e-mail to you.</p>
+			<br>
+			<input type="email" id="email" placeholder="john.smith@email.com">
+            <input type="submit" id="submit">
+			<div id="msg"></div>
+			<ul>
+            	<li>
+                	<span>Uimor Program  -- UC-Riverside Model Order Reduction Tool Suite</span>
+                    <a href="http://www.ee.ucr.edu/~stan/project/uimor/uimor_main.htm" class="more right">MORE</a>
+                 </li>
+                <li>The ETBR, Extended Truncated Balanced Realization (EBTR) , power grid solver. <a href="http://www.ee.ucr.edu/~stan/project/pg_ana/pg_proj.htm" class="more right">MORE</a></li>
+                <li>ThermPOF and ThermSID -- Architecture level thermal modeling tools <a href="http://www.ee.ucr.edu/~stan/project/thermal_model/main_thermal_proj.htm" class="more right">MORE</a></li>
+                <li>SCAD3   -- Determinant Decision Diagram Based Symbolic Analysis tool <a href="http://www.ee.ucr.edu/~stan/project/symbolic_ana/symbolic_ana_proj.htm" class="more right">MORE</a></li>
+            </ul>
+		</div>
+        
+        <br>
+        <ul class="clear">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Teaching</a></li>
+            <li><a href="">Software Download</a></li>
+            <li><a href="">Useful Links</a></li>
+            <li><a href="">Publication</a></li>
+            <li><a href="">News</a></li>
+        </ul>
+	</div>
+</body>
+</html>

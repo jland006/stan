@@ -1,0 +1,190 @@
+@charset "utf-8";
+* {
+	font-size: 14px;
+	font-style: normal;
+	margin: 0px;
+	padding: 0px;
+	background-repeat: no-repeat;
+	color: #000000;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	cursor: default;
+}
+body {
+	background-color: #DFDCCD;
+}
+ul {
+	list-style-type: none;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;	
+}
+.white {
+	color: #FFFFFF;
+}
+.brick {
+	color: #88391D;
+}
+.blue {
+	color: #09214E;
+}
+.bar {
+	background-image: url(../images/nav_divider.png);
+	height: 21px;
+	width: 18px;
+	padding-right: 14px;
+	padding-left: 14px;
+	background-position: center;
+}
+#header {
+	background-image: linear-gradient(bottom, #11203B 40%, #24457E 70%);
+	background-image: -o-linear-gradient(bottom, #11203B 40%, #24457E 70%);
+	background-image: -moz-linear-gradient(bottom, #11203B 40%, #24457E 70%);
+	background-image: -webkit-linear-gradient(bottom, #11203B 40%, #24457E 70%);
+	background-image: -ms-linear-gradient(bottom, #11203B 40%, #24457E 70%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.4, #11203B),
+		color-stop(0.7, #24457E)
+	);
+	height: 110px;
+}
+#header #heading {
+	margin: auto;
+	width: 960px;
+	text-align: center;
+}
+#header #heading #name {
+	font-size: 60px;
+	margin-right: 5px;
+}
+#header #heading #subject {
+	font-size: 18px;
+	font-weight: normal;
+	margin-left: 5px;
+}
+#wrapper {
+	width: 870px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 648px;
+	position: relative;
+	padding-right: 45px;
+	padding-left: 45px;
+	padding-top: 30px;
+	background-image: url(../images/background.jpg);
+}
+
+#navbar {
+	background-image: url(../images/transparent_navigation_bar.png);
+	height: 47px;
+	width: 828px;
+	position: absolute;
+	left: 50%;
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: -414px;
+	top: -17px;
+}
+#wrapper #navbar #nav_wrap {
+	margin-top: 10px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+#wrapper #navbar a {
+	color: #88391D;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	cursor: pointer;	
+}
+#wrapper #biobox {
+	background-image: url(../images/shadowed_biography_box.png);
+	height: 381px;
+	width: 830px;
+	margin-left: 4px;
+	padding-left: 40px;
+	padding-top: 30px;
+	margin-top: 5px;
+}
+#wrapper #biobox #stan {
+	background-image: url(../images/sheldon_photo_w_shadow.png);
+	height: 349px;
+	width: 306px;
+}
+#wrapper #biobox #bio_text {
+	margin-top: 20px;
+	width: 337px;
+	margin-left: -10px;
+}
+#wrapper #biobox #bio_text p {
+	line-height: 16px;
+}
+#wrapper #biobox #bio_text #nvidia_teach {
+	background-image: url(../images/CUDA-teaching_logo.png);
+	height: 97px;
+	width: 80px;
+}
+#wrapper #biobox #bio_text #nvidia_research {
+	background-image: url(../images/CUDA-research_logo.png);
+	height: 97px;
+	width: 80px;
+	margin-left: 20px;
+}
+#wrapper #biobox #contact_box {
+	margin-top: 20px;
+	margin-left: 27px;
+}
+#wrapper #biobox #contact_box p {
+	font-size: 13px;
+}
+#wrapper #biobox #contact_box #qrcode {
+	background-image: url(../images/tan_qr_code.jpg);
+	height: 88px;
+	width: 88px;
+}
+#wrapper #news_feed {
+	width: 824px;
+	margin-left: 20px;
+	margin-top: 15px;
+	background-color: #F0E5D0;
+	-webkit-box-shadow: 4px 5px 18px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 4px 5px 18px rgba(0, 0, 0, 0.5);
+	box-shadow: 4px 5px 18px rgba(0, 0, 0, 0.5);
+	border: 2px solid #FFFFFF;
+}
+#wrapper #news_feed ul li div {
+	padding: 10px;
+	position: relative;
+	height: 140px;
+}
+#wrapper ul {
+	margin-left: 125px;
+	margin-bottom: 10px;
+}
+#wrapper ul li {
+	float: left;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+}
+#wrapper ul li a {
+	outline: 0;
+	text-decoration: underline;
+	display: block;
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-bottom: 3px;
+	padding-left: 20px;
+	cursor: pointer;
+}

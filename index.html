@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Dr. Sheldon Tan</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.vticker-min.js"></script>
+<script>
+$(function() {
+	$('#news_feed').vTicker({ 
+		speed: 500,
+		pause: 7000,
+		animation: 'fade',
+		mousePause: true,
+		showItems: 1
+	});
+
+
+});
+</script>
+</head>
+
+<body>
+	<div id="header">
+    	<div id="heading">
+            <span id="name" class="white">Dr. Sheldon Tan</span>
+        	<span id="subject" class="white">Professor of Electrical Engineering</span>
+        </div>
+    </div>
+    
+	<div id="wrapper">
+		<div id="navbar">
+        	<div id="nav_wrap">
+                <a href="index.html" class="left">HOME</a>
+                <div class="bar left"></div>
+                <a href="mslab.html" class="left">MSLAB</a>
+                <div class="bar left"></div>
+                <a href="research.html" class="left">PROJECTS & RESEARCH</a>
+                <div class="bar left"></div>
+                <a href="" class="left">PHOTO ALBUMS</a>
+                <div class="bar left"></div>
+                <a href="members.html" class="left">MEMEBERS</a>
+                <div class="bar left"></div>
+                <a href="" class="left">CONTACT</a>
+			</div>
+        </div>
+        <div id="biobox">
+        	<div id="stan" class="left"></div>
+            <div id="bio_text" class="left">
+            	<p>I received my B.S. and M.S. from Fudan University, Shanghai, P. R. China, in 1992 and 1995 respectively and the Ph.D. from University of Iowa, Iowa City, in 1999. Here are my latest curriculum vitae and short biography. See the latest news for my group.</p>
+                <br>
+                <p>I am the director of Mixed-Signal Nanometer VLSI Research Lab at UC Riverside. I am also a cooperating faculty member (co-faculty) of the Computer Science and Engineering department, and the Associate Director of the Computer Engineer (CEN) program at Bourns College of Engineering.</p>
+                <br>
+                <div id="nvidia_teach" class="left"></div>
+                <div id="nvidia_research" class="left"></div>
+            </div>
+            <div id="contact_box" class="left">
+            	<p class="brick">EMAIL</p>
+                <p style="margin-bottom:9px;">stan@ee.ucr.edu</p>
+                <p class="brick">PHONE</p>
+                <p style="margin-bottom:9px;">(951) 827-5143</p>
+                <p class="brick">FAX</p>
+                <p style="margin-bottom:9px;">(951) 827-2425</p>
+                <p class="brick">OFFICE</p>
+                <p style="margin-bottom:9px;">Eng-II, Rm 424</p>
+                <br><br>
+                <div id="qrcode"></div>
+            </div>
+        </div>
+        <div id="news_feed" class="clear">
+            <ul>
+                <li>
+                	<div>
+                        <p class="brick" style="text-shadow: 0px 1px #AAA;">RESEARCH INTERESTS</p>
+                        <br>
+                        <p>My research group focuses on many cutting-edge researches ranging from modeling, simulation and optimization for interconnect, mixed-signal/analog/RF circuits;</p>
+                        <a href="" class="more">MORE</a>
+
+                    </div>
+                </li>
+                <li>
+                	<div>
+                        <p class="brick" style="text-shadow: 0px 1px #AAA;">OPENINGS: NEW PH.D AND POST-DOC</p>
+                        <br>
+                        <p>1/1/2013. My group is looking for new Ph.D. students for Fall 2013. Student candidates with strong mathematic baackground skills (CS background) are especially welcome. I am</p>
+                        <a href="" class="more">MORE</a>
+                    <div>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <ul class="clear">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Teaching</a></li>
+            <li><a href="">Software Download</a></li>
+            <li><a href="">Useful Links</a></li>
+            <li><a href="">Publication</a></li>
+            <li><a href="">News</a></li>
+        </ul>
+	</div>
+</body>
+</html>

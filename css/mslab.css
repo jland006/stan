@@ -1,0 +1,53 @@
+#wrapper #mslabbox {
+	background-image: url(../images/shadowed_biography_box.png);
+	height: 381px;
+	width: 830px;
+	margin-left: 4px;
+	padding-left: 40px;
+	padding-top: 30px;
+	margin-top: 5px;
+}
+#wrapper #mslabbox #mslab {
+	background-image: url(../images/mslab.jpg);
+	height: 225px;
+	width: 300px;
+	-webkit-box-shadow: 6px 1px 18px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    6px 1px 18px rgba(0, 0, 0, 0.5);
+	box-shadow:         6px 1px 18px rgba(0, 0, 0, 0.5);
+}
+#wrapper #mslabbox #mslab_text {
+	width: 307px;
+	margin-left: 20px;
+}
+#wrapper #mslabbox #mslab_text p {
+	line-height: 16px;
+}
+#wrapper #mslabbox #contact_box {
+	margin-left: 27px;
+}
+#wrapper #mslabbox #contact_box p {
+	font-size: 13px;
+}
+#wrapper #news_feed {
+	width: 824px;
+	margin-left: 20px;
+	margin-top: 15px;
+	background-color: #F0E5D0;
+	-webkit-box-shadow: 4px 5px 18px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 4px 5px 18px rgba(0, 0, 0, 0.5);
+	box-shadow: 4px 5px 18px rgba(0, 0, 0, 0.5);
+	border: 2px solid #FFFFFF;
+}
+#wrapper #news_feed ul li div {
+	padding: 10px;
+	position: relative;
+	height: 140px;
+}
+.more {
+	color: #09214E;
+	text-shadow: 0px 1px #AAA;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	cursor: pointer;	
+}

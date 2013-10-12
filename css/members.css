@@ -1,0 +1,68 @@
+#wrapper #biobox {
+	background-image: url(../images/shadowed_biography_box.png);
+	height: 381px;
+	width: 830px;
+	margin-left: 4px;
+	padding-left: 40px;
+	padding-top: 30px;
+	margin-top: 5px;
+}
+#wrapper #biobox #stan {
+	background-image: url(../images/sheldon_photo_w_shadow_sm.png);
+	height: 285px;
+	width: 250px;
+}
+#wrapper #biobox #bio_text {
+	margin-top: 20px;
+	width: 337px;
+	margin-left: -10px;
+}
+#wrapper #biobox #bio_text p {
+	line-height: 16px;
+}
+#wrapper #biobox #bio_text #nvidia_teach {
+	background-image: url(../images/CUDA-teaching_logo.png);
+	height: 97px;
+	width: 80px;
+}
+#wrapper #biobox #bio_text #nvidia_research {
+	background-image: url(../images/CUDA-research_logo.png);
+	height: 97px;
+	width: 80px;
+	margin-left: 20px;
+}
+#wrapper #biobox #contact_box {
+	margin-top: 20px;
+	margin-left: 27px;
+}
+#wrapper #biobox #contact_box p {
+	font-size: 13px;
+}
+#wrapper #biobox #contact_box #qrcode {
+	background-image: url(../images/tan_qr_code.jpg);
+	height: 88px;
+	width: 88px;
+}
+#wrapper #news_feed {
+	width: 824px;
+	margin-left: 20px;
+	margin-top: 15px;
+	background-color: #F0E5D0;
+	-webkit-box-shadow: 4px 5px 18px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 4px 5px 18px rgba(0, 0, 0, 0.5);
+	box-shadow: 4px 5px 18px rgba(0, 0, 0, 0.5);
+	border: 2px solid #FFFFFF;
+}
+#wrapper #news_feed ul li div {
+	padding: 10px;
+	position: relative;
+	height: 140px;
+}
+.more {
+	color: #09214E;
+	text-shadow: 0px 1px #AAA;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	cursor: pointer;	
+}
